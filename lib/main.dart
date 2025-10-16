@@ -1,20 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
+import 'app.dart';
+import 'firebase_options.dart';
+
 void main() {
-  runApp(const MainApp());
-}
+  WidgetsFlutterBinding.ensureInitialized();
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+    demoProjectId: 'demo-notes-app-101025',
+  );
+  runApp(const NotesApp());
 }

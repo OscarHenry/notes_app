@@ -1,0 +1,18 @@
+# build.yaml
+# ...
+
+targets:
+  $default:
+    builders:
+      flutter_gen_runner: # or flutter_gen
+        assets:
+          outputs:
+            directory_path_enabled: true
+        options:
+          integrations:
+            image: true
+            flutter_svg: true
+            rive: false
+            lottie: false
+          output: lib/assets/ # Optional (default: lib/gen/)
+          line_length: 120 # Optional
