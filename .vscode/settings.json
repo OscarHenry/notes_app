@@ -1,5 +1,4 @@
 {
-  // ==== EDITOR EXPERIENCE ====
   "editor.fontFamily": "JetBrains Mono, Fira Code, monospace",
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
@@ -16,8 +15,6 @@
   "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
   "editor.inlineSuggest.enabled": true,
-
-  // ==== DART & FLUTTER ====
   "[dart]": {
     "editor.defaultFormatter": "Dart-Code.dart-code",
     "editor.formatOnSave": true,
@@ -34,8 +31,6 @@
   "dart.checkForSdkUpdates": true,
   "dart.debugExternalPackageLibraries": false,
   "dart.debugSdkLibraries": false,
-
-  // ==== AUTO-IMPORT SETTINGS ====
   "dart.insertArgumentPlaceholders": false,
   "dart.completeFunctionCalls": true,
   "dart.includeDependenciesInWorkspaceSymbols": true,
@@ -43,28 +38,21 @@
   "dart.autoImportCompletions": true,
   "dart.showTodos": true,
   "dart.promptToGetPackages": false,
-
-  // ==== TERMINAL ====
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.fontFamily": "JetBrains Mono",
   "terminal.integrated.cursorBlinking": true,
-
-  // ==== UI / UX ====
-  "workbench.colorTheme": "Cursor Dark", // or "One Dark Pro" / "Dracula Soft"
+  "workbench.colorTheme": "Cursor Dark",
   "workbench.iconTheme": "material-icon-theme",
   "window.zoomLevel": 0,
   "explorer.compactFolders": false,
   "breadcrumbs.enabled": true,
   "workbench.statusBar.visible": true,
   "workbench.sideBar.location": "left",
-
-  // ==== FILES & PROJECTS ====
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
     "**/.idea": true,
-    // "**/.vscode": true,
     "**/build": true
   },
   "files.associations": {
@@ -78,18 +66,11 @@
     "**/build": true,
     "**/.dart_tool": true
   },
-
-  // ==== GIT / SOURCE CONTROL ====
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.postCommitCommand": "sync",
   "git.openAfterClone": "prompt",
   "diffEditor.ignoreTrimWhitespace": false,
-
-  // By default, VS Code will only switch to the Debug Console when you start
-  // debugging the first time in a session. This setting tells VS Code to always
-  // switch to the Debug Console when starting a session, so you can see the
-  // programs output.
   "debug.internalConsoleOptions": "openOnSessionStart"
 }
